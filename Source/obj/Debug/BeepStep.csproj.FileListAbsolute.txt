@@ -1,0 +1,6 @@
+C:\Users\dan_h\Documents\SimioUserExtensions\BeepStep.dll
+C:\Users\dan_h\Documents\SimioUserExtensions\BeepStep.pdb
+E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.csproj.CoreCompileInputs.cache
+E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.csproj.CopyComplete
+E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.dll
+E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.pdb
