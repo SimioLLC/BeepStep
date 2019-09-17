@@ -1,2 +1,2 @@
 # BeepStep
-Simplest of all user-defined steps; it just beeps!
+Simplest of all Simio user-defined steps; it just beeps!
