@@ -4,3 +4,13 @@ E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.cs
 E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.csproj.CopyComplete
 E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.dll
 E:\(svn azure)\SimioCloud\API\Examples2019\BeepStep\Source\obj\Debug\BeepStep.pdb
+C:\Users\dan_h\Source\Repos\BeepStep\Source\obj\Debug\BeepStep.csproj.AssemblyReference.cache
+C:\Users\dan_h\Source\Repos\BeepStep\Source\obj\Debug\BeepStep.csproj.CoreCompileInputs.cache
+C:\Users\dan_h\Source\Repos\BeepStep\Source\obj\Debug\BeepStep.dll
+C:\Users\dan_h\Source\Repos\BeepStep\Source\obj\Debug\BeepStep.pdb
+C:\Users\dan_h\Source\Repos\BeepStep\Source\obj\Debug\BeepStep.csproj.CopyComplete
+C:\Users\dan_h\source\repos\BeepStep\Source\BeepStep.dll
+C:\Users\dan_h\source\repos\BeepStep\Source\BeepStep.pdb
+C:\Users\dan_h\source\repos\BeepStep\Source\SimioAPI.dll
+C:\Users\dan_h\source\repos\BeepStep\Source\SimioAPI.Extensions.dll
+C:\Users\dan_h\source\repos\BeepStep\Source\SimioAPI.Graphics.dll

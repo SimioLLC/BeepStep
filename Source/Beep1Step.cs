@@ -86,7 +86,7 @@ namespace BeepStep
         /// </summary>
         public ExitType Execute(IStepExecutionContext context)
         {
-            SystemSounds.Asterisk.Play();
+            SystemSounds.Hand.Play();
             context.ExecutionInformation.TraceInformation("Beep2");
             return ExitType.FirstExit;
         }

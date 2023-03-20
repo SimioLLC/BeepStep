@@ -10,14 +10,14 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BeepStep</RootNamespace>
     <AssemblyName>BeepStep</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>C:\Users\dan_h\Documents\SimioUserExtensions\</OutputPath>
+    <OutputPath>.\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -35,13 +35,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SimioAPI, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="SimioAPI, Version=15.241.27812.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\SimioAPI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Simio LLC\Simio\SimioAPI.dll</HintPath>
     </Reference>
-    <Reference Include="SimioAPI.Extensions, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="SimioAPI.Extensions, Version=15.241.27812.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\SimioAPI.Extensions.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Program Files\Simio LLC\Simio\SimioAPI.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Beep1Step.cs" />
     <Compile Include="Beep2Step.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -64,6 +65,13 @@
     </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>xcopy /y "$(OutDir)BeepStep.dll" "$(UserProfile)\Documents\SimioUserExtensions\BeepStep.dll"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
