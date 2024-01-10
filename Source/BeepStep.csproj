@@ -84,7 +84,9 @@
     </PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>xcopy /y "$(OutDir)BeepStep.dll" "$(UserProfile)\Documents\SimioUserExtensions\BeepStep.dll"</PostBuildEvent>
+    <PostBuildEvent>PowerShell -NoProfile -ExecutionPolicy Bypass -Command "&amp; { $targetFolder = [System.IO.Path]::Combine([Environment]::GetFolderPath([Environment+SpecialFolder]::MyDocuments), 'SimioUserExtensions'); Write-Host 'Target Folder:' $targetFolder; if (Test-Path -Path $targetFolder) { Write-Host 'Target folder already exists.' } else { Write-Host 'Target folder does not exist. Creating...'; New-Item -ItemType Directory -Force -Path $targetFolder; Write-Host 'Target folder created.' }; foreach ($file in Get-ChildItem \"$(TargetDir)*\" -File) { Copy-Item -Path $file.FullName -Destination $targetFolder; Write-Host 'Copied ' $file.Name ' to ' $targetFolder } }"
+
+</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
